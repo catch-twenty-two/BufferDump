@@ -14,7 +14,7 @@
                                                                                         \
         printf("\n\n ***************START (%d) (%p)****************\n\n", bufLen, buf); \
         if (buf != NULL) {                                                              \
-            for (i = 0; i < bufLen; i++) {                                              \
+            for (i = 0; i < bufLen;) {                                              \
                 for (j = 0; j < bufLen && j < 10 && i < bufLen; j++, i++) {             \
                     if (buf[i] < 32 || buf[i] == 127) {                                 \
                         printf("%s (0x%02x) ", codes[buf[i]], buf[i]);                  \
