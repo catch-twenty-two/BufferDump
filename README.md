@@ -5,7 +5,7 @@ A macro for dumping a formatted buffer in C or C++, great for debugging protocol
 example output:
 
 
- ***************START (160) (0x7ffca437a540)****************
+***************START (160) (0x7ffca437a540)****************
 
 SOH (0x01) NUL (0x00) NUL (0x00) NUL (0x00) STX (0x02) NUL (0x00) NUL (0x00) NUL (0x00) ETX (0x03) NUL (0x00) 
 NUL (0x00) EOT (0x04) NUL (0x00) NUL (0x00) NUL (0x00) ENQ (0x05) NUL (0x00) NUL (0x00) NUL (0x00) ACK (0x06) 
