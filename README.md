@@ -3,9 +3,17 @@
 A macro for dumping a formatted buffer in C or C++, great for debugging protocols, or investagting structure formats 
 
 example output:
+```
+int main () {
+    int buffer[40] = {1,2,3,4,5,6,7,'g','k','.'};
+    buffer[36] = 'G';
+    
+    DUMP_BUFFER(buffer, sizeof(buffer));
 
-
-***************START (160) (0x7ffca437a540)****************
+    return 0;
+}
+```
+```
 
 SOH (0x01) NUL (0x00) NUL (0x00) NUL (0x00) STX (0x02) NUL (0x00) NUL (0x00) NUL (0x00) ETX (0x03) NUL (0x00) 
 NUL (0x00) EOT (0x04) NUL (0x00) NUL (0x00) NUL (0x00) ENQ (0x05) NUL (0x00) NUL (0x00) NUL (0x00) ACK (0x06) 
@@ -23,4 +31,4 @@ NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL
 NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) 
 NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) NUL (0x00) 
 
- *******************END********************
+```
